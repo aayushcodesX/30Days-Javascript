@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH3YxIOmUXwO-OSogGqkYVANuBTrbq3vk_DsFFrxGFIg&s=10);
+  backdrop-filter: blur(20px);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.clock-circle {
+  border: 1rem solid rgb(254, 254, 254);
+  width: 30vw;
+  height: 50vh;
+  border-radius: 50%;
+  position: relative;
+  transform: translateY(-6px);
+}
+.hand {
+  width: 50%;
+  height: 6px;
+  background: rgb(253, 253, 253);
+  position: absolute;
+  border-radius: 1rem;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+.mins-hand{
+    background-color: aqua;
+}
+.sec-hand{
+    background-color: rgb(33, 114, 254);
+}
+.hour-hand{
+    background-color: rgb(118, 250, 17);
+}
